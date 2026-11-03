@@ -1,0 +1,51 @@
+{
+  "Off": {
+    "mode": 0,
+    "start": 0,
+    "end": 0,
+    "force": 0,
+    "frequency": 0
+  },
+  "Feedback": {
+    "mode": 1,
+    "start": 30,
+    "end": 180,
+    "force": 7,
+    "frequency": 0
+  },
+  "Weapon": {
+    "mode": 2,
+    "start": 40,
+    "end": 120,
+    "force": 8,
+    "frequency": 0
+  },
+  "Vibration": {
+    "mode": 3,
+    "start": 10,
+    "end": 200,
+    "force": 6,
+    "frequency": 40
+  },
+  "Bow": {
+    "mode": 1,
+    "start": 15,
+    "end": 220,
+    "force": 8,
+    "frequency": 0
+  },
+  "Galloping": {
+    "mode": 3,
+    "start": 0,
+    "end": 255,
+    "force": 5,
+    "frequency": 12
+  },
+  "MachineGun": {
+    "mode": 3,
+    "start": 20,
+    "end": 180,
+    "force": 8,
+    "frequency": 25
+  }
+}
