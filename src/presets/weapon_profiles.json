@@ -1,0 +1,37 @@
+[
+  {
+    "id": "revolver",
+    "name": "Heavy Revolver",
+    "mode": 2,
+    "startPosition": 2,
+    "endPosition": 7,
+    "force": 220,
+    "description": "Steep resistance wall representing heavy hammer pull before crisp release"
+  },
+  {
+    "id": "automatic_rifle",
+    "name": "Assault Rifle Burst",
+    "mode": 3,
+    "position": 1,
+    "frequency": 24,
+    "amplitude": 190,
+    "description": "Continuous high-frequency mechanical recoil vibration cycle during sustained automatic fire"
+  },
+  {
+    "id": "composite_bow",
+    "name": "Composite Bow",
+    "mode": 1,
+    "startPosition": 0,
+    "force": 160,
+    "description": "Linear continuous resistance ramp simulating bowstring tension drawing"
+  },
+  {
+    "id": "shotgun",
+    "name": "Double-Barrel Shotgun",
+    "mode": 2,
+    "startPosition": 4,
+    "endPosition": 8,
+    "force": 255,
+    "description": "Maximum trigger threshold resistance requiring firm deliberate trigger squeeze"
+  }
+]
