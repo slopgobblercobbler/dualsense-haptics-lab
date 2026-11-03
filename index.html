@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DualSense Haptics Lab | Advanced Controller Laboratory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation / Controller Status -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon"><i class="fa-solid fa-gamepad"></i></div>
+                <div class="brand-text">
+                    <h1>DualSense</h1>
+                    <span class="badge">Haptics Lab v2.4</span>
+                </div>
+            </div>
+
+            <div class="nav-section">
+                <h3>Laboratory Modules</h3>
+                <nav class="nav-links">
+                    <button class="nav-btn active" data-tab="rumble"><i class="fa-solid fa-wave-square"></i> Rumble & Actuators</button>
+                    <button class="nav-btn" data-tab="triggers"><i class="fa-solid fa-sliders"></i> Adaptive Triggers</button>
+                    <button class="nav-btn" data-tab="presets"><i class="fa-solid fa-box-archive"></i> Haptic Presets</button>
+                    <button class="nav-btn" data-tab="telemetry"><i class="fa-solid fa-chart-line"></i> Real-time Telemetry</button>
+                </nav>
+            </div>
+
+            <div class="controller-status-card">
+                <div class="status-header">
+                    <span class="status-dot online"></span>
+                    <span class="status-title">Virtual DualSense 5</span>
+                </div>
+                <div class="controller-mini-graphic">
+                    <div class="mini-body">
+                        <div class="mini-trigger l"></div>
+                        <div class="mini-trigger r"></div>
+                        <div class="mini-sticks"></div>
+                    </div>
+                </div>
+                <div class="status-details">
+                    <div class="metric"><span>Firmware</span> <strong>0420.2026</strong></div>
+                    <div class="metric"><span>Connection</span> <strong>Web Audio / USB</strong></div>
+                    <div class="metric"><span>Battery</span> <strong class="battery-level"><i class="fa-solid fa-battery-full"></i> 98%</strong></div>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <p>Designed for PlayStation 5 Developers & Audio Engineers</p>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="main-content">
+            <!-- Top Bar -->
+            <header class="top-bar">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search waveform parameters, triggers, or presets...">
+                </div>
+                <div class="top-actions">
+                    <button id="global-master-play" class="btn btn-primary pulse"><i class="fa-solid fa-play"></i> Test Haptic Stream</button>
+                    <button id="export-preset-btn" class="btn btn-secondary"><i class="fa-solid fa-code-merge"></i> Export JSON</button>
+                    <div class="user-avatar">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="content-viewport">
+                
+                <!-- MODULE 1: RUMBLE & ACTUATORS -->
+                <section id="tab-rumble" class="lab-module active">
+                    <div class="module-header">
+                        <div>
+                            <h2>Voice Coil Actuators & Dual-Motor Rumble</h2>
+                            <p>Synthesize haptic force feedback waveforms with independent left/right frequency and amplitude shaping.</p>
+                        </div>
+                        <div class="module-actions">
+                            <button class="btn btn-outline" id="reset-rumble"><i class="fa-solid fa-rotate-left"></i> Reset Defaults</button>
+                            <button class="btn btn-accent" id="trigger-rumble-test"><i class="fa-solid fa-bolt"></i> Burst Pulse</button>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-grid">
+                        <!-- Left Motor Controls -->
+                        <div class="card control-card">
+                            <div class="card-title">
+                                <i class="fa-solid fa-circle-dot text-primary"></i>
+                                <h3>Left Actuator (Heavy / Low Frequency)</h3>
+                                <span class="val-badge" id="left-val-badge">120 Hz</span>
+                            </div>
+                            <div class="control-group">
+                                <label>Frequency (Sub-Bass rumble)</label>
+                                <div class="slider-with-val">
+                                    <input type="range" id="left-freq" min="20" max="250" value="120" step="1">
+                                    <span id="left-freq-val">120 Hz</span>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label>Amplitude / Gain</label>
+                                <div class="slider-with-val">
+                                    <input type="range" id="left-gain" min="0" max="1" value="0.75" step="0.01">
+                                    <span id="left-gain-val">75%</span>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label>Waveform Shape</label>
+                                <div class="radio-group" id="left-waveform">
+                                    <label class="radio-chip active"><input type="radio" name="l-wave" value="sine" checked> Sine</label>
+                                    <label class="radio-chip"><input type="radio" name="l-wave" value="triangle"> Triangle</label>
+                                    <label class="radio-chip"><input type="radio" name="l-wave" value="sawtooth"> Saw</label>
+                                    <label class="radio-chip"><input type="radio" name="l-wave" value="square"> Square</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Motor Controls -->
+                        <div class="card control-card">
+                            <div class="card-title">
+                                <i class="fa-solid fa-circle-dot text-accent"></i>
+                                <h3>Right Actuator (Fine / High Frequency)</h3>
+                                <span class="val-badge" id="right-val-badge">180 Hz</span>
+                            </div>
+                            <div class="control-group">
+                                <label>Frequency (Mid/High texture)</label>
+                                <div class="slider-with-val">
+                                    <input type="range" id="right-freq" min="50" max="600" value="180" step="1">
+                                    <span id="right-freq-val">180 Hz</span>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label>Amplitude / Gain</label>
+                                <div class="slider-with-val">
+                                    <input type="range" id="right-gain" min="0" max="1" value="0.60" step="0.01">
+                                    <span id="right-gain-val">60%</span>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label>Waveform Shape</label>
+                                <div class="radio-group" id="right-waveform">
+                                    <label class="radio-chip active"><input type="radio" name="r-wave" value="sine" checked> Sine</label>
+                                    <label class="radio-chip"><input type="radio" name="r-wave" value="triangle"> Triangle</label>
+                                    <label class="radio-chip"><input type="radio" name="r-wave" value="sawtooth"> Saw</label>
+                                    <label class="radio-chip"><input type="radio" name="r-wave" value="square"> Square</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Realtime Oscilloscope -->
+                    <div class="card oscilloscope-card">
+                        <div class="card-title">
+                            <i class="fa-solid fa-wave-square"></i>
+                            <h3>Real-Time Haptic Output Spectrum & Waveform</h3>
+                            <div class="osc-legend">
+                                <span class="legend-item"><span class="dot primary"></span> Left Motor</span>
+                                <span class="legend-item"><span class="dot accent"></span> Right Motor</span>
+                            </div>
+                        </div>
+                        <div class="canvas-container">
+                            <canvas id="rumbleCanvas"></canvas>
+                        </div>
+                        <div class="osc-footer">
+                            <button class="btn btn-sm btn-primary" id="toggle-audio-engine"><i class="fa-solid fa-power-off"></i> Enable Web Audio Engine</button>
+                            <span class="status-note" id="audio-status-text">Audio engine suspended (Click to initialize)</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- MODULE 2: ADAPTIVE TRIGGERS -->
+                <section id="tab-triggers" class="lab-module">
+                    <div class="module-header">
+                        <div>
+                            <h2>Adaptive Trigger Resistance & Effect Visualizer</h2>
+                            <p>Configure L2/R2 feedback modes, weapon resistance curves, and dynamic snap-back thresholds.</p>
+                        </div>
+                        <div class="module-actions">
+                            <button class="btn btn-outline" id="sync-triggers"><i class="fa-solid fa-arrows-rotate"></i> Mirror L/R</button>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-grid-uneven">
+                        <!-- Trigger Parameters -->
+                        <div class="card control-card">
+                            <div class="card-title">
+                                <i class="fa-solid fa-sliders"></i>
+                                <h3>Trigger Configuration</h3>
+                            </div>
+                            <div class="control-group">
+                                <label>Target Trigger Channel</label>
+                                <div class="segmented-control" id="trigger-channel-select">
+                                    <button class="seg-btn active" data-channel="left">Left (L2)</button>
+                                    <button class="seg-btn" data-channel="right">Right (R2)</button>
+                                    <button class="seg-btn" data-channel="both">Both (L2 + R2)</button>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label>Trigger Effect Mode</label>
+                                <select id="trigger-mode" class="form-select">
+                                    <option value="off">Off (Standard Spring)</option>
+                                    <option value="feedback">Feedback (Constant Resistance)</option>
+                                    <option value="weapon">Weapon (Trigger Break / Pull)</option>
+                                    <option value="vibration">Vibration (Rapid Pulsing)</option>
+                                    <option value="slope">Slope Feedback (Progressive)</option>
+                                </select>
+                            </div>
+                            <div class="control-group" id="group-start-pos">
+                                <label>Start Position (Deadzone Start)</label>
+                                <div class="slider-with-val">
+                                    <input type="range" id="trigger-start" min="0" max="8" value="2" step="1">
+                                    <span id="trigger-start-val">2 / 9</span>
+                                </div>
+                            </div>
+                            <div class="control-group" id="group-end-pos">
+                                <label>End Position (Max Resistance)</label>
+                                <div class="slider-with-val">
+                                    <input type="range" id="trigger-end" min="1" max="9" value="8" step="1">
+                                    <span id="trigger-end-val">8 / 9</span>
+                                </div>
+                            </div>
+                            <div class="control-group" id="group-strength">
+                                <label>Force Strength / Resistance</label>
+                                <div class="slider-with-val">
+                                    <input type="range" id="trigger-strength" min="0" max="8" value="6" step="1">
+                                    <span id="trigger-strength-val">Level 6</span>
+                                </div>
+                            </div>
+                            <div class="control-group" id="group-frequency" style="display:none;">
+                                <label>Vibration Frequency</label>
+                                <div class="slider-with-val">
+                                    <input type="range" id="trigger-freq" min="1" max="40" value="10" step="1">
+                                    <span id="trigger-freq-val">10 Hz</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trigger Curve Visualizer -->
+                        <div class="card trigger-visualizer-card">
+                            <div class="card-title">
+                                <i class="fa-solid fa-chart-area"></i>
+                                <h3>Resistance Curve vs. Travel Depth</h3>
+                                <div class="mode-badge" id="active-mode-badge">Feedback Mode</div>
+                            </div>
+                            <div class="canvas-container-tall">
+                                <canvas id="triggerCanvas"></canvas>
+                            </div>
+                            <div class="trigger-interactive-bar">
+                                <label>Simulate Finger Pull Depth:</label>
+                                <input type="range" id="trigger-pull-depth" min="0" max="100" value="45" class="pull-slider">
+                                <span id="pull-depth-val">45%</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- MODULE 3: HAPTIC PRESETS -->
+                <section id="tab-presets" class="lab-module">
+                    <div class="module-header">
+                        <div>
+                            <h2>PlayStation Studio Haptic Presets</h2>
+                            <p>Instantly load battle-tested haptic profiles used in AAA titles and hardware stress tests.</p>
+                        </div>
+                    </div>
+
+                    <div class="preset-grid">
+                        <div class="preset-card" data-preset="heavy-rain">
+                            <div class="preset-icon"><i class="fa-solid fa-cloud-rain"></i></div>
+                            <h3>Ambient Heavy Rain</h3>
+                            <p>Subtle high-frequency droplets on right actuator with gentle rolling thunder on left.</p>
+                            <div class="preset-tags">
+                                <span class="tag">Environment</span>
+                                <span class="tag">Subtle</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline load-preset-btn">Load Preset</button>
+                        </div>
+
+                        <div class="preset-card" data-preset="shotgun">
+                            <div class="preset-icon"><i class="fa-solid fa-gun"></i></div>
+                            <h3>Shotgun Trigger Break</h3>
+                            <p>Heavy weapon mode with absolute resistance wall at 70% pull followed by violent recoil.</p>
+                            <div class="preset-tags">
+                                <span class="tag">Weapon</span>
+                                <span class="tag">High Impact</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline load-preset-btn">Load Preset</button>
+                        </div>
+
+                        <div class="preset-card" data-preset="sports-car">
+                            <div class="preset-icon"><i class="fa-solid fa-car-rear"></i></div>
+                            <h3>Supercar Throttle & Rumble</h3>
+                            <p>Engine idle vibration coupled with progressive pedal resistance on R2.</p>
+                            <div class="preset-tags">
+                                <span class="tag">Vehicle</span>
+                                <span class="tag">Dynamic</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline load-preset-btn">Load Preset</button>
+                        </div>
+
+                        <div class="preset-card" data-preset="heartbeat">
+                            <div class="preset-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                            <h3>Adrenaline Heartbeat</h3>
+                            <p>Low frequency pulsing thump simulating intense cinematic suspense moments.</p>
+                            <div class="preset-tags">
+                                <span class="tag">Cinematic</span>
+                                <span class="tag">Low Frequency</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline load-preset-btn">Load Preset</button>
+                        </div>
+
+                        <div class="preset-card" data-preset="sword-clash">
+                            <div class="preset-icon"><i class="fa-solid fa-khanda"></i></div>
+                            <h3>Melee Sword Parry</h3>
+                            <p>Sharp transient burst with resonant metallic decay across both voice coils.</p>
+                            <div class="preset-tags">
+                                <span class="tag">Combat</span>
+                                <span class="tag">Transient</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline load-preset-btn">Load Preset</button>
+                        </div>
+
+                        <div class="preset-card" data-preset="ice-surface">
+                            <div class="preset-icon"><i class="fa-solid fa-snowflake"></i></div>
+                            <h3>Glacial Ice Skating</h3>
+                            <p>High-frequency crisp crunch texture simulating blades on crystalline ice.</p>
+                            <div class="preset-tags">
+                                <span class="tag">Texture</span>
+                                <span class="tag">High-Freq</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline load-preset-btn">Load Preset</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- MODULE 4: REAL-TIME TELEMETRY -->
+                <section id="tab-telemetry" class="lab-module">
+                    <div class="module-header">
+                        <div>
+                            <h2>Real-time Telemetry & Performance Monitor</h2>
+                            <p>Inspect haptic latency, CPU audio thread load, actuator thermal estimates, and packet rates.</p>
+                        </div>
+                        <div class="module-actions">
+                            <button class="btn btn-outline" id="clear-telemetry"><i class="fa-solid fa-trash-can"></i> Clear Logs</button>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-grid">
+                        <div class="card">
+                            <div class="card-title">
+                                <i class="fa-solid fa-microchip"></i>
+                                <h3>Audio Engine Metrics</h3>
+                            </div>
+                            <div class="metrics-list">
+                                <div class="metric-row">
+                                    <span>Sample Rate</span>
+                                    <strong id="telemetry-samplerate">48,000 Hz</strong>
+                                </div>
+                                <div class="metric-row">
+                                    <span>Buffer Latency</span>
+                                    <strong id="telemetry-latency">5.3 ms</strong>
+                                </div>
+                                <div class="metric-row">
+                                    <span>Active Nodes</span>
+                                    <strong id="telemetry-nodes">6 Oscillators / Gain</strong>
+                                </div>
+                                <div class="metric-row">
+                                    <span>Packet Transmission Rate</span>
+                                    <strong>250 Hz (USB HID)</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-title">
+                                <i class="fa-solid fa-temperature-half"></i>
+                                <h3>Actuator Thermal Load</h3>
+                            </div>
+                            <div class="thermal-bars">
+                                <div class="thermal-item">
+                                    <div class="thermal-label"><span>Left Voice Coil</span> <strong>34.2 °C</strong></div>
+                                    <div class="progress-bar"><div class="progress-fill" style="width: 34%;"></div></div>
+                                </div>
+                                <div class="thermal-item">
+                                    <div class="thermal-label"><span>Right Voice Coil</span> <strong>38.7 °C</strong></div>
+                                    <div class="progress-bar"><div class="progress-fill accent" style="width: 39%;"></div></div>
+                                </div>
+                                <div class="thermal-item">
+                                    <div class="thermal-label"><span>Adaptive Trigger Driver IC (L2/R2)</span> <strong>42.1 °C</strong></div>
+                                    <div class="progress-bar"><div class="progress-fill warning" style="width: 42%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card log-card">
+                        <div class="card-title">
+                            <i class="fa-solid fa-terminal"></i>
+                            <h3>Haptic Controller Event Log</h3>
+                        </div>
+                        <div class="terminal-box" id="terminal-logs">
+                            <div class="log-entry info"><span class="time">[22:30:40]</span> DualSense Haptic Lab initialized successfully.</div>
+                            <div class="log-entry info"><span class="time">[22:30:40]</span> Web Audio API context ready (48kHz stereo).</div>
+                            <div class="log-entry success"><span class="time">[22:30:41]</span> Default preset loaded: Dual-motor rumble active.</div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- JSON Export Modal -->
+    <div id="export-modal" class="modal-overlay" style="display:none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Export DualSense Haptic Profile (JSON)</h3>
+                <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Copy or download the complete haptic and trigger configuration schema for game engine integration (Unreal / Unity / Custom C++).</p>
+                <textarea id="json-export-output" readonly></textarea>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="copy-json-btn"><i class="fa-solid fa-copy"></i> Copy to Clipboard</button>
+                <button class="btn btn-primary" id="download-json-btn"><i class="fa-solid fa-download"></i> Download .json</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
