@@ -1,0 +1,5 @@
+{
+  "second_harmonic_attenuation_db": -18.5,
+  "third_harmonic_attenuation_db": -24.0,
+  "thd_limit_percent": 3.0
+}
