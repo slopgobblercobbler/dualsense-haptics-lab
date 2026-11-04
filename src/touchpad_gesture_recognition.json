@@ -1,0 +1,6 @@
+{
+  "tap_max_duration_ms": 150,
+  "tap_max_displacement_pixels": 15,
+  "swipe_min_velocity_pps": 300,
+  "pinch_zoom_min_span_pixels": 40
+}
