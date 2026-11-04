@@ -1,0 +1,5 @@
+{
+  "low_frequency_resonance_hz": 120,
+  "high_frequency_resonance_hz": 240,
+  "attenuation_threshold_percent": 15
+}
