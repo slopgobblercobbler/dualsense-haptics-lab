@@ -1,0 +1,7 @@
+{
+  "active_min_x": 0,
+  "active_max_x": 1920,
+  "active_min_y": 0,
+  "active_max_y": 1080,
+  "edge_deadzone_margin_pixels": 20
+}
