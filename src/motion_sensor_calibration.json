@@ -1,0 +1,6 @@
+{
+  "gyro_resolution_dps": 2000,
+  "accel_resolution_g": 16,
+  "gravity_constant_mps2": 9.80665,
+  "sampling_frequency_hz": 1000
+}
