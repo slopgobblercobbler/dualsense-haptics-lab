@@ -1,0 +1,6 @@
+{
+  "min_charge_temp_celsius": 0,
+  "max_charge_temp_celsius": 45,
+  "min_discharge_temp_celsius": -10,
+  "max_discharge_temp_celsius": 60
+}
