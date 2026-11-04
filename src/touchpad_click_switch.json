@@ -1,0 +1,5 @@
+{
+  "button_mask": 1048576,
+  "click_debounce_ms": 12,
+  "release_debounce_ms": 15
+}
