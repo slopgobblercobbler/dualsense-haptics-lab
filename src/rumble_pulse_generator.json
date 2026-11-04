@@ -1,0 +1,6 @@
+{
+  "min_frequency_hz": 10,
+  "max_frequency_hz": 300,
+  "default_duty_cycle": 0.5,
+  "pwm_resolution_bits": 8
+}
