@@ -1,0 +1,6 @@
+{
+  "adc_resolution_bits": 12,
+  "min_raw_adc": 180,
+  "max_raw_adc": 3920,
+  "linearity_tolerance_percent": 1.5
+}
