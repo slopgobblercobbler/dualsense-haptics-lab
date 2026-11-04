@@ -1,0 +1,9 @@
+{
+  "min_start_pos": 0,
+  "max_start_pos": 8,
+  "min_end_pos": 1,
+  "max_end_pos": 9,
+  "min_force": 0,
+  "max_force": 8,
+  "snap_force_max": 8
+}
