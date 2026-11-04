@@ -1,0 +1,6 @@
+{
+  "max_x": 1920,
+  "max_y": 1080,
+  "touch_inactive_flag": 128,
+  "max_simultaneous_fingers": 2
+}
