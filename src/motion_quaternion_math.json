@@ -1,0 +1,10 @@
+{
+  "quaternion_components": [
+    "w",
+    "x",
+    "y",
+    "z"
+  ],
+  "normalization_tolerance": 0.0001,
+  "integration_time_step_s": 0.001
+}
