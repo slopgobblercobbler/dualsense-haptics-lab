@@ -1,0 +1,11 @@
+{
+  "waveforms": [
+    "sine",
+    "square",
+    "triangle",
+    "chirp"
+  ],
+  "max_amplitude": 1.0,
+  "envelope_attack_ms": 10,
+  "envelope_release_ms": 25
+}
