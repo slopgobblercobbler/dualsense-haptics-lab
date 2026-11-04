@@ -1,0 +1,5 @@
+{
+  "low_frequency_damping_ratio": 0.85,
+  "high_frequency_damping_ratio": 0.72,
+  "stop_brake_pulse_ms": 5
+}
