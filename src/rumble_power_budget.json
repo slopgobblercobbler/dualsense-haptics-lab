@@ -1,0 +1,5 @@
+{
+  "continuous_power_max_mw": 1200,
+  "peak_burst_power_mw": 2500,
+  "thermal_cutoff_temp_c": 70
+}
