@@ -1,0 +1,7 @@
+{
+  "fire_position_min": 2,
+  "fire_position_max": 7,
+  "release_position_min": 3,
+  "release_position_max": 8,
+  "max_resistance_force": 8
+}
