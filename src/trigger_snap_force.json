@@ -1,0 +1,5 @@
+{
+  "snap_force_level_max": 8,
+  "snap_breakthrough_threshold_percent": 85,
+  "snap_recovery_ms": 30
+}
