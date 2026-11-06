@@ -1,0 +1,5 @@
+{
+  "flick_velocity_min_px_per_s": 1500,
+  "max_contact_time_ms": 100,
+  "min_displacement_px": 50
+}
