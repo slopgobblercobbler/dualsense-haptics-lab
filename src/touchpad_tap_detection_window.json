@@ -1,0 +1,5 @@
+{
+  "max_tap_duration_ms": 180,
+  "max_finger_movement_pixels": 15,
+  "double_tap_interval_ms": 250
+}
