@@ -1,0 +1,7 @@
+{
+  "filter_type": "first_order_iir",
+  "cutoff_hz": 12.5,
+  "sample_rate_hz": 1000,
+  "alpha": 0.0728,
+  "drift_compensation": true
+}
