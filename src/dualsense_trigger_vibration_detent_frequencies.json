@@ -1,0 +1,6 @@
+{
+  "min_frequency_hz": 1,
+  "max_frequency_hz": 40,
+  "recommended_detent_hz": 24,
+  "duty_cycle_pct": 50
+}
