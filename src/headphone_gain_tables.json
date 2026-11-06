@@ -1,0 +1,6 @@
+{
+  "gain_min_db": -64.0,
+  "gain_max_db": 0.0,
+  "step_db": 0.5,
+  "total_steps": 128
+}
