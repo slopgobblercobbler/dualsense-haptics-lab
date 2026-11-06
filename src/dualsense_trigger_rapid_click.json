@@ -1,0 +1,6 @@
+{
+  "click_threshold_pct": 75,
+  "reset_threshold_pct": 30,
+  "tactile_feedback_force_pct": 92,
+  "haptic_pulse_width_ms": 15
+}
