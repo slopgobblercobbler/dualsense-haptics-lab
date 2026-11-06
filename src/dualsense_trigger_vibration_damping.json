@@ -1,0 +1,5 @@
+{
+  "damping_ratio": 0.707,
+  "resonant_cutoff_hz": 85.0,
+  "highpass_pole_count": 2
+}
