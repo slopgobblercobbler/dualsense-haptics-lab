@@ -1,0 +1,6 @@
+{
+  "window_size_samples": 4,
+  "min_velocity_px_sec": 120,
+  "max_velocity_px_sec": 4800,
+  "smoothing_weight": 0.65
+}
