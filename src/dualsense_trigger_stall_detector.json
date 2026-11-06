@@ -1,0 +1,6 @@
+{
+  "stall_current_ma": 450,
+  "timeout_ms": 250,
+  "backoff_pwm": 64,
+  "thermal_cutoff_c": 75.0
+}
