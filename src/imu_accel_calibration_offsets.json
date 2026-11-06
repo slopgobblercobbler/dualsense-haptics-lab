@@ -1,0 +1,9 @@
+{
+  "sensitivity_scale_lsb_per_g": 8192,
+  "gravity_vector_1g_lsb": 8192,
+  "calibrated_range_g": [
+    -4,
+    4
+  ],
+  "zero_g_tolerance_lsb": 150
+}
