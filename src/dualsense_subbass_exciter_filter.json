@@ -1,0 +1,9 @@
+{
+  "exciter_band_hz": [
+    20,
+    65
+  ],
+  "harmonic_generation": "even_and_odd",
+  "drive_gain_db": 4.5,
+  "mix_ratio": 0.4
+}
