@@ -1,0 +1,5 @@
+{
+  "damping_ratio_zeta": 1.0,
+  "natural_frequency_rad_s": 80.0,
+  "settling_time_ms": 50.0
+}
