@@ -1,0 +1,7 @@
+{
+  "BATTERY_STATUS_DISCHARGING": 0,
+  "BATTERY_STATUS_CHARGING": 1,
+  "BATTERY_STATUS_FULL": 2,
+  "critical_threshold_percent": 5,
+  "low_threshold_percent": 15
+}
