@@ -1,0 +1,6 @@
+{
+  "x_border_margin_px": 16,
+  "y_border_margin_px": 12,
+  "hysteresis_filter_px": 3,
+  "max_active_tracking_points": 2
+}
