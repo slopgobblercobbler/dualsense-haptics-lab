@@ -1,0 +1,6 @@
+{
+  "min_span_distance_pixels": 40,
+  "zoom_in_threshold": 1.25,
+  "zoom_out_threshold": 0.8,
+  "centroid_smoothing_alpha": 0.75
+}
