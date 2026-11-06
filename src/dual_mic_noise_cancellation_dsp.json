@@ -1,0 +1,7 @@
+{
+  "mic_distance_meters": 0.045,
+  "sampling_rate_hz": 48000,
+  "beamforming_type": "delay_and_sum",
+  "cardioid_null_angle_deg": 180,
+  "attenuation_depth_db": -24
+}
