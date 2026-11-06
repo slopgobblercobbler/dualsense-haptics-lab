@@ -1,0 +1,5 @@
+{
+  "polynomial_order": 2,
+  "history_window_samples": 4,
+  "flick_threshold_pixels_per_sec": 450
+}
