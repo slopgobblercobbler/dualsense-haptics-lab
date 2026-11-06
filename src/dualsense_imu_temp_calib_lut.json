@@ -1,0 +1,6 @@
+{
+  "temp_min_c": 10.0,
+  "temp_max_c": 50.0,
+  "slope_bias_dps_per_c": 0.015,
+  "lut_points": 9
+}
