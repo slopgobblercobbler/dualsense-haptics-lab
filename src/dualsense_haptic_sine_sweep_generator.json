@@ -1,0 +1,6 @@
+{
+  "start_frequency_hz": 20.0,
+  "stop_frequency_hz": 400.0,
+  "sweep_type": "LOGARITHMIC",
+  "duration_ms": 2000
+}
