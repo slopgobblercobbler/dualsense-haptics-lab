@@ -1,0 +1,6 @@
+{
+  "fade_in_default_ms": 250,
+  "fade_out_default_ms": 500,
+  "pulse_duty_cycle_pct": 50,
+  "gamma_correction_exponent": 2.2
+}
