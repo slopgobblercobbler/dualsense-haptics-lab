@@ -1,0 +1,5 @@
+{
+  "debounce_enter_frames": 2,
+  "debounce_exit_frames": 3,
+  "jitter_filter_alpha": 0.85
+}
