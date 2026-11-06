@@ -1,0 +1,6 @@
+{
+  "range_2g_sensitivity_lsb_g": 16384,
+  "range_4g_sensitivity_lsb_g": 8192,
+  "range_8g_sensitivity_lsb_g": 4096,
+  "range_16g_sensitivity_lsb_g": 2048
+}
