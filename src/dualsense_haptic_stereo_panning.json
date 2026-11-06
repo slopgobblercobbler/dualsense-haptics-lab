@@ -1,0 +1,6 @@
+{
+  "pan_left_gain": 1.0,
+  "pan_right_gain": 0.0,
+  "panning_law": "EQUAL_POWER_3DB",
+  "crossfeed_ratio": 0.15
+}
