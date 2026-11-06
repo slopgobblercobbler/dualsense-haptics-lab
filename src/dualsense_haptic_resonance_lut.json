@@ -1,0 +1,6 @@
+{
+  "voice_coil_resonance_hz": 150,
+  "q_factor": 4.2,
+  "anti_resonance_notch_hz": 290,
+  "damping_ratio": 0.12
+}
