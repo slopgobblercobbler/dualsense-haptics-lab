@@ -1,0 +1,7 @@
+{
+  "crossover_freq_lfe_hz": 80,
+  "crossover_freq_rumble_hz": 250,
+  "compression_ratio": "4:1",
+  "attack_time_ms": 5,
+  "release_time_ms": 50
+}
