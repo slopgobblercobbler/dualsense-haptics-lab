@@ -1,0 +1,7 @@
+{
+  "effect_mode": "WEAPON",
+  "burst_rounds": 3,
+  "frequency_hz": 18,
+  "peak_resistance_percent": 88,
+  "release_rate_percent": 95
+}
