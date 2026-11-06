@@ -1,0 +1,6 @@
+{
+  "window_size": 256,
+  "periodic": true,
+  "symmetric": false,
+  "peak_amplitude": 1.0
+}
