@@ -1,0 +1,5 @@
+{
+  "MIC_LED_OFF": 0,
+  "MIC_LED_SOLID": 1,
+  "MIC_LED_PULSE": 2
+}
