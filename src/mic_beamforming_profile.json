@@ -1,0 +1,6 @@
+{
+  "beamforming_array_elements": 2,
+  "array_spacing_mm": 21.5,
+  "polar_pattern": "cardioid",
+  "voice_activity_threshold_db": -42
+}
