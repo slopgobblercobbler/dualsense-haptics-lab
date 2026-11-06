@@ -1,0 +1,6 @@
+{
+  "curve_type": "POLYNOMIAL_CUBIC",
+  "coefficient_a": 0.0001,
+  "coefficient_b": 0.02,
+  "detent_intercept_pos": 140
+}
