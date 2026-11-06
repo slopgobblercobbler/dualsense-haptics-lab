@@ -1,0 +1,5 @@
+{
+  "min_palm_aspect_ratio": 2.0,
+  "min_palm_contact_pixels": 300,
+  "edge_margin_rejection_pixels": 25
+}
