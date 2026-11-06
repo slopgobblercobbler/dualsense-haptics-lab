@@ -1,0 +1,5 @@
+{
+  "temp_coefficient_deg_s_c": 0.05,
+  "reference_temp_c": 25.0,
+  "thermal_hysteresis_c": 1.5
+}
