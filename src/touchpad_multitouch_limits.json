@@ -1,0 +1,7 @@
+{
+  "max_fingers": 2,
+  "finger_id_mask": "0x7F",
+  "touch_inactive_flag": "0x80",
+  "max_res_x": 1920,
+  "max_res_y": 1080
+}
