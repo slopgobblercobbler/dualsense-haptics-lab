@@ -1,0 +1,5 @@
+{
+  "generator_polynomial": "0xEDB88320",
+  "complement_result": true,
+  "packet_trailer_offset": 60
+}
