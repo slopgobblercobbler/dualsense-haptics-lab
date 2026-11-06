@@ -1,0 +1,5 @@
+{
+  "group_delay_ms": 1.25,
+  "phase_jitter_tolerance_deg": 5.0,
+  "inter_channel_phase_limit_deg": 180.0
+}
