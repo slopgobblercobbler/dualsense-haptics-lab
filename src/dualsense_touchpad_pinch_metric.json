@@ -1,0 +1,6 @@
+{
+  "min_finger_distance_pixels": 45,
+  "max_finger_distance_pixels": 1800,
+  "pinch_scale_exponent": 1.15,
+  "hysteresis_pixels": 8
+}
