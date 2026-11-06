@@ -1,0 +1,5 @@
+{
+  "max_jitter_ms": 1.5,
+  "median_filter_window": 5,
+  "timestamp_rollover_mask": "0x0000FFFF"
+}
