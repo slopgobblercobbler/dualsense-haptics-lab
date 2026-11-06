@@ -1,0 +1,5 @@
+{
+  "filter_type": "quaternion_gravity_compensator",
+  "gravity_magnitude_g": 1.0,
+  "acceleration_deadzone_mg": 18
+}
