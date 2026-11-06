@@ -1,0 +1,6 @@
+{
+  "trickle_pulse_ms": 1000,
+  "fast_charge_pulse_ms": 250,
+  "full_charge_solid": true,
+  "fault_flash_rate_hz": 4.0
+}
