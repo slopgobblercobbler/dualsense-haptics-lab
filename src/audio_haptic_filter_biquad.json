@@ -1,0 +1,6 @@
+{
+  "filter_type": "lowpass",
+  "q_factor": 0.707,
+  "gain_db": 0.0,
+  "cutoff_frequency_hz": 120
+}
