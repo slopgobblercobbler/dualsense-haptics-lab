@@ -1,0 +1,11 @@
+{
+  "band_1_hz": 100,
+  "band_2_hz": 330,
+  "band_3_hz": 1000,
+  "band_4_hz": 3300,
+  "band_5_hz": 10000,
+  "gain_range_db": [
+    -12,
+    12
+  ]
+}
