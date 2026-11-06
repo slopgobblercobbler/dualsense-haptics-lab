@@ -1,0 +1,10 @@
+{
+  "pulsing_period_sec": 1.5,
+  "amber_color": {
+    "r": 255,
+    "g": 140,
+    "b": 0
+  },
+  "min_luminance_percent": 15,
+  "max_luminance_percent": 100
+}
