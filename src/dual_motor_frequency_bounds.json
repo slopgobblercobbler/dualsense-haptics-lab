@@ -1,0 +1,5 @@
+{
+  "heavy_motor_resonance_hz": 80,
+  "light_motor_resonance_hz": 160,
+  "haptic_pcm_sample_rate_hz": 48000
+}
