@@ -1,0 +1,7 @@
+{
+  "TRIGGER_MODE_FEEDBACK": 1,
+  "min_start_position": 0,
+  "max_start_position": 9,
+  "force_strength_min": 1,
+  "force_strength_max": 8
+}
