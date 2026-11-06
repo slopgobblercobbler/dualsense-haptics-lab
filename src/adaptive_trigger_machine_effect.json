@@ -1,0 +1,8 @@
+{
+  "TRIGGER_MODE_MACHINE": 5,
+  "start_position": 1,
+  "end_position": 7,
+  "pulse_frequency_hz": 20,
+  "recoil_force": 8,
+  "damping_force": 3
+}
