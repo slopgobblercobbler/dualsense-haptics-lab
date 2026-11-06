@@ -1,0 +1,5 @@
+{
+  "nominal_rate_hz": 1000.0,
+  "pll_bandwidth_hz": 15.0,
+  "jitter_max_ppm": 50
+}
