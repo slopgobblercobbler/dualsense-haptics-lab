@@ -1,0 +1,6 @@
+{
+  "angular_velocity_deadzone_rad_s": 0.015,
+  "process_noise_q": 0.001,
+  "measurement_noise_r": 0.03,
+  "sample_period_s": 0.004
+}
