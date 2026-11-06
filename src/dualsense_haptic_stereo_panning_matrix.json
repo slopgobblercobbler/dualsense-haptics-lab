@@ -1,0 +1,6 @@
+{
+  "channel_left_weight": 0.707,
+  "channel_right_weight": 0.707,
+  "crossover_freq_hz": 160,
+  "spatial_spread_angle_deg": 60
+}
