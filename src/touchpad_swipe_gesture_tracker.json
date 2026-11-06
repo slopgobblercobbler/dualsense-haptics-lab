@@ -1,0 +1,11 @@
+{
+  "min_velocity_pixels_per_sec": 150,
+  "min_displacement_pixels": 80,
+  "max_orthogonal_drift_pixels": 40,
+  "swipe_directions": [
+    "LEFT",
+    "RIGHT",
+    "UP",
+    "DOWN"
+  ]
+}
