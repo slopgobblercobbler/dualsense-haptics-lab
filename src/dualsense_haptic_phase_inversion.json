@@ -1,0 +1,5 @@
+{
+  "enable_inversion": true,
+  "phase_offset_deg": 180.0,
+  "anti_phase_attenuation_db": -12.0
+}
