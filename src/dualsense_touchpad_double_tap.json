@@ -1,0 +1,5 @@
+{
+  "max_tap_duration_ms": 180,
+  "max_interval_between_taps_ms": 300,
+  "max_displacement_pixels": 40
+}
