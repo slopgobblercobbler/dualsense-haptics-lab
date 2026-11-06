@@ -1,0 +1,7 @@
+{
+  "TRIGGER_MODE_BOW": 4,
+  "start_pull_zone": 1,
+  "end_pull_zone": 8,
+  "snap_force_level": 7,
+  "holding_force_level": 2
+}
