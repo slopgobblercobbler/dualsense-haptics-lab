@@ -1,0 +1,6 @@
+{
+  "complementary_filter_gain": 0.98,
+  "gyro_drift_threshold_rad_s": 0.005,
+  "gravity_vector_norm_g": 1.0,
+  "sampling_frequency_hz": 1000
+}
