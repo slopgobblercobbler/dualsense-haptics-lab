@@ -1,0 +1,5 @@
+{
+  "thermal_resistance_c_per_w": 18.5,
+  "thermal_capacitance_j_per_c": 1.45,
+  "safe_temperature_limit_c": 75
+}
