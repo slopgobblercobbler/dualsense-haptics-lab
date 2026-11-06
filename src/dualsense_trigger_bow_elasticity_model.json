@@ -1,0 +1,7 @@
+{
+  "mode": "BOW",
+  "start_position_pct": 10,
+  "end_position_pct": 90,
+  "max_spring_force_pct": 98,
+  "snap_release": true
+}
