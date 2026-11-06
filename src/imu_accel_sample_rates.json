@@ -1,0 +1,10 @@
+{
+  "supported_sample_rates_hz": [
+    250,
+    500,
+    1000
+  ],
+  "default_sample_rate_hz": 1000,
+  "timestamp_counter_bits": 32,
+  "microsecond_clock_source": true
+}
