@@ -1,0 +1,6 @@
+{
+  "num_stages": 5,
+  "roll_off_db_per_octave": -3.0,
+  "algorithm": "voss_mccartney",
+  "seed": 1337
+}
