@@ -1,0 +1,6 @@
+{
+  "sequence_field_offset": 63,
+  "bit_width": 8,
+  "wrap_value": 256,
+  "dropped_packet_detection": true
+}
