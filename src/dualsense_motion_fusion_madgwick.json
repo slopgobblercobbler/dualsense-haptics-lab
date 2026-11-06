@@ -1,0 +1,6 @@
+{
+  "algorithm": "madgwick_imu",
+  "beta_gain": 0.041,
+  "sample_rate_hz": 1000,
+  "gyro_error_rad_s": 0.05
+}
