@@ -1,0 +1,6 @@
+{
+  "TRIGGER_MODE_VIBRATION": 3,
+  "min_vibration_freq_hz": 1,
+  "max_vibration_freq_hz": 255,
+  "amplitude_levels": 8
+}
