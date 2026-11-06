@@ -1,0 +1,5 @@
+{
+  "pinch_threshold_px": 45,
+  "max_two_finger_separation": 1800,
+  "velocity_filter_order": 3
+}
