@@ -1,0 +1,17 @@
+{
+  "voltage_lut_mv": [
+    3400,
+    3650,
+    3800,
+    3950,
+    4180
+  ],
+  "percent_lut": [
+    0,
+    25,
+    50,
+    75,
+    100
+  ],
+  "thermal_derate_celsius": 45
+}
