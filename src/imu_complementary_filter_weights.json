@@ -1,0 +1,5 @@
+{
+  "gyro_weight_alpha": 0.98,
+  "accel_weight_beta": 0.02,
+  "update_rate_hz": 250
+}
