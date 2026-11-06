@@ -1,0 +1,5 @@
+{
+  "decay_constant_tau": 0.035,
+  "envelope_mode": "EXPONENTIAL_DECAY",
+  "min_sustain_amplitude": 0.05
+}
