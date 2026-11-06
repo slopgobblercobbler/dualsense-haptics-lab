@@ -1,0 +1,5 @@
+{
+  "min_rotation_deg": 15.0,
+  "center_deadzone_px": 30,
+  "angular_velocity_dps_min": 45.0
+}
