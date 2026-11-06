@@ -1,0 +1,6 @@
+{
+  "min_position": 0,
+  "max_position": 255,
+  "sensor_deadband_lsb": 4,
+  "mechanical_hard_stop": 250
+}
