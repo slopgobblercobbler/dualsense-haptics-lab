@@ -1,0 +1,6 @@
+{
+  "gallop_min_interval_ms": 15,
+  "gallop_max_interval_ms": 120,
+  "first_pulse_start_zone": 2,
+  "second_pulse_start_zone": 5
+}
