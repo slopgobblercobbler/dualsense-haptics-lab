@@ -1,0 +1,7 @@
+{
+  "period_sec": 3.0,
+  "bezier_control_p1": 0.42,
+  "bezier_control_p2": 0.58,
+  "min_brightness": 10,
+  "max_brightness": 255
+}
