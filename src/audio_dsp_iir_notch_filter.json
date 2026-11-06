@@ -1,0 +1,6 @@
+{
+  "center_frequency_hz": 60.0,
+  "notch_bandwidth_hz": 5.0,
+  "sampling_rate_hz": 48000.0,
+  "q_factor": 12.0
+}
