@@ -1,0 +1,5 @@
+{
+  "min_flick_velocity_px_s": 2500,
+  "max_flick_duration_ms": 120,
+  "direction_tolerance_deg": 15
+}
