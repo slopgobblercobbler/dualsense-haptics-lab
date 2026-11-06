@@ -1,0 +1,6 @@
+{
+  "click_position": 120,
+  "feedback_resistance": 240,
+  "release_decay_ms": 15,
+  "detent_snapping_force": 180
+}
