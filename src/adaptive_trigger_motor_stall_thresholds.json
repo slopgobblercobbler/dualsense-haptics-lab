@@ -1,0 +1,6 @@
+{
+  "stall_current_ma": 850,
+  "thermal_throttle_temp_c": 65.0,
+  "cutoff_temp_c": 75.0,
+  "hold_duty_cycle_max_percent": 60
+}
