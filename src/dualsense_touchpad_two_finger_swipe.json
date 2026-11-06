@@ -1,0 +1,5 @@
+{
+  "swipe_min_distance_px": 120,
+  "max_angle_deviation_deg": 25.0,
+  "max_duration_ms": 350
+}
