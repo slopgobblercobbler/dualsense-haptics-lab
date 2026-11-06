@@ -1,0 +1,6 @@
+{
+  "strike_duration_ms": 15,
+  "release_duration_ms": 45,
+  "cycle_period_ms": 60,
+  "gallop_steps": 3
+}
