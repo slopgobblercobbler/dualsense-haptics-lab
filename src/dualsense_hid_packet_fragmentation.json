@@ -1,0 +1,5 @@
+{
+  "max_fragment_size_bytes": 64,
+  "multi_fragment_reassembly": true,
+  "fragment_timeout_ms": 25
+}
