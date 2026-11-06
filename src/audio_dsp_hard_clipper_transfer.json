@@ -1,0 +1,5 @@
+{
+  "clipping_threshold": 0.95,
+  "sigmoid_knee_width": 0.05,
+  "output_limit": 1.0
+}
